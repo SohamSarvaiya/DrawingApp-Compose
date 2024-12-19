@@ -1,4 +1,5 @@
 This project is a demo application that showcases how to implement a simple drawing app using Jetpack Compose. The app allows users to draw on a canvas using their fingers, select different colors for drawing, and clear the canvas with a single tap. It highlights the power of Jetpack Compose for building highly interactive and dynamic UIs while following clean architecture principles.
+![dr](https://github.com/user-attachments/assets/733320cc-914e-4e92-9307-99a35c42d740)
 
 Key Features:
 Drawing on Canvas
