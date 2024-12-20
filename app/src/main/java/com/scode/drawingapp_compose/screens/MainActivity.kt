@@ -1,4 +1,4 @@
-package com.scode.drawingapp_compose
+package com.scode.drawingapp_compose.screens
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -14,6 +14,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.scode.drawingapp_compose.CanvasControls
+import com.scode.drawingapp_compose.DrawingAction
+import com.scode.drawingapp_compose.DrawingCanvas
+import com.scode.drawingapp_compose.DrawingViewModel
+import com.scode.drawingapp_compose.allColors
 import com.scode.drawingapp_compose.ui.theme.DrawingAppComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,7 +30,6 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     val viewModel = viewModel<DrawingViewModel>()
                     val state by viewModel.state.collectAsStateWithLifecycle()
-
                     Column(
                         modifier = Modifier
                             .fillMaxSize()
